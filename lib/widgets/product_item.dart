@@ -30,9 +30,11 @@ class ProductItem extends StatelessWidget {
             color: Theme.of(context).accentColor,
           ),
           backgroundColor: Colors.black87,
-          title: Text(
-            title,
-            textAlign: TextAlign.center,
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              title,
+            ),
           ),
           trailing: IconButton(
               iconSize: 20,

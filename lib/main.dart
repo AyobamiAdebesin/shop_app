@@ -13,8 +13,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (ctx) => Products(),
+    return ChangeNotifierProvider( // changenotifier allows us to register a class (Products) to which we can the listen  
+      create: (ctx) => Products(), //in child widgets and whenever that class updates, the widgets which are listening are rebuilt
       child: MaterialApp(
         theme: ThemeData(
           accentColor: Colors.amber,
